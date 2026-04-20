@@ -1,0 +1,104 @@
+[
+  {
+    "feature": "cos_total_variation",
+    "l1_importance": 0.7568167659339375,
+    "perm_importance": 0.07675361043141135,
+    "stability": 1.0
+  },
+  {
+    "feature": "cos_mid_mean",
+    "l1_importance": 0.3869034722166834,
+    "perm_importance": 0.02521890713496163,
+    "stability": 1.0
+  },
+  {
+    "feature": "final_entropy",
+    "l1_importance": 0.30653686951619874,
+    "perm_importance": 0.0182092812826058,
+    "stability": 1.0
+  },
+  {
+    "feature": "cos_std",
+    "l1_importance": 0.30873777219613113,
+    "perm_importance": 0.015955416469530664,
+    "stability": 0.4
+  },
+  {
+    "feature": "cos_q50",
+    "l1_importance": 0.25455559475820105,
+    "perm_importance": 0.011184916545294845,
+    "stability": 0.4
+  },
+  {
+    "feature": "cos_q10",
+    "l1_importance": 0.21803763277970195,
+    "perm_importance": 0.009790529287427824,
+    "stability": 0.2
+  },
+  {
+    "feature": "cos_autocorr_lag2",
+    "l1_importance": 0.1874379291582352,
+    "perm_importance": 0.003496888373331921,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_autocorr_lag3",
+    "l1_importance": 0.2077462857938802,
+    "perm_importance": 0.003265199312044653,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_early_mean",
+    "l1_importance": 0.1271218446227093,
+    "perm_importance": 0.0032294424850873417,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_mean",
+    "l1_importance": 0.1047579816772908,
+    "perm_importance": 0.0021999872357266305,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_max",
+    "l1_importance": 0.04126369576489068,
+    "perm_importance": 0.000283566317564885,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_iqr",
+    "l1_importance": 0.0,
+    "perm_importance": 0.0,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_late_mean",
+    "l1_importance": 0.0,
+    "perm_importance": 0.0,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_late_minus_early",
+    "l1_importance": 0.0,
+    "perm_importance": 0.0,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_q90",
+    "l1_importance": 0.040874717343259356,
+    "perm_importance": -0.0005172789949766688,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_autocorr_lag1",
+    "l1_importance": 0.04848351666813675,
+    "perm_importance": -0.0010337204033364935,
+    "stability": 0.0
+  },
+  {
+    "feature": "cos_sign_change_count",
+    "l1_importance": 0.12291200636199992,
+    "perm_importance": -0.0017644570440144493,
+    "stability": 0.0
+  }
+]

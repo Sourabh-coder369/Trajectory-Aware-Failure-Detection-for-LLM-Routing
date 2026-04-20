@@ -1,0 +1,31 @@
+{
+    "model": "MLP",
+    "best_architecture": "Shallow (64)",
+    "hidden_layer_sizes": [
+        64
+    ],
+    "split": {
+        "train_original": 5978,
+        "train_balanced": 4344,
+        "test": 1495
+    },
+    "metrics": {
+        "best_threshold": 0.25000000000000006,
+        "f1_score": 0.8001828989483311,
+        "precision": 0.708502024291498,
+        "recall": 0.9191176470588235,
+        "accuracy": 0.7076923076923077,
+        "roc_auc": 0.7477772877106644,
+        "pr_auc": 0.8223316147093284
+    },
+    "confusion_matrix": [
+        [
+            183,
+            360
+        ],
+        [
+            77,
+            875
+        ]
+    ]
+}
