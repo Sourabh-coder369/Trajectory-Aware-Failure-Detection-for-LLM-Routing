@@ -40,7 +40,7 @@ def compute_correctness(entry):
     
     return abs(pred_val - truth_val) < 1e-4
 
-def load_data(filename="trajectory_data_f32.jsonl"):
+def load_data(filename="data/trajectory_data_f32.jsonl"):
     data = []
     with open(filename, "r") as f:
         for line in f:

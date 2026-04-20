@@ -34,7 +34,7 @@ def compute_correctness(entry):
     return abs(pred - truth) < 1e-4
 
 
-def load_data(filename="trajectory_data_f32.jsonl"):
+def load_data(filename="data/trajectory_data_f32.jsonl"):
     data = []
     with open(filename, "r", encoding="utf-8") as f:
         for line in f:
@@ -274,7 +274,7 @@ def train_router_lstm():
         "confusion_matrix": cm.tolist(),
     }
 
-    with open("router_lstm_results.json", "w", encoding="utf-8") as f:
+    with open("results/router_lstm_results.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=4)
 
     print("\nDone! Results saved to router_lstm_results.json")

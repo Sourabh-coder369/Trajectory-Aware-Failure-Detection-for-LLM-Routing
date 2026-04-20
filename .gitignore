@@ -1,5 +1,10 @@
-# Mistral compare results
-mistral_gsm8k_compare_results_*.csv
-mistral_gsm8k_compare_results_*.jsonl
-mistral_gsm8k_compare_results_full_*.csv
-mistral_gsm8k_compare_results_full_*.jsonl
+# Data files
+data/
+
+# Mistral experiment results
+experiments/mistral_gsm8k_compare_results_*.csv
+experiments/mistral_gsm8k_compare_results_*.jsonl
+
+# Python cache
+__pycache__/
+*.pyc

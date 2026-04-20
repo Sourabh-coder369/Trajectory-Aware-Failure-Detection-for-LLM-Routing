@@ -52,7 +52,7 @@ def compute_correctness(entry: Dict) -> bool:
     return abs(pred_val - truth_val) < 1e-4
 
 
-def load_data(filename: str = "trajectory_data_f32.jsonl") -> List[Dict]:
+def load_data(filename: str = "data/trajectory_data_f32.jsonl") -> List[Dict]:
     data = []
     with open(filename, "r") as f:
         for line in f:

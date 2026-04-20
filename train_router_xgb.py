@@ -40,7 +40,7 @@ def compute_correctness(entry):
     
     return abs(pred_val - truth_val) < 1e-4
 
-def load_data(filename="../trajectory_data_f32.jsonl"):
+def load_data(filename="../data/trajectory_data_f32.jsonl"):
     data = []
     # Try fetching from parent dir first since we are in orange_problem
     try:
@@ -48,7 +48,7 @@ def load_data(filename="../trajectory_data_f32.jsonl"):
             for line in f:
                 data.append(json.loads(line))
     except FileNotFoundError:
-        with open("trajectory_data_f32.jsonl", "r") as f:
+        with open("data/trajectory_data_f32.jsonl", "r") as f:
             for line in f:
                 data.append(json.loads(line))
     return data

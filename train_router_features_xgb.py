@@ -40,7 +40,7 @@ def compute_correctness(entry: Dict) -> bool:
     return abs(pred_val - truth_val) < 1e-4
 
 
-def load_data(filename: str = "trajectory_data_f32.jsonl") -> List[Dict]:
+def load_data(filename: str = "data/trajectory_data_f32.jsonl") -> List[Dict]:
     data = []
     with open(filename, "r") as f:
         for line in f:
@@ -289,7 +289,7 @@ def train_router(top_k: int = 10) -> None:
         },
     }
 
-    with open("router_features_xgb_results.json", "w") as f:
+    with open("results/router_features_xgb_results.json", "w") as f:
         json.dump(output_dict, f, indent=4)
 
     print("\nDone! Results saved to router_features_xgb_results.json")
