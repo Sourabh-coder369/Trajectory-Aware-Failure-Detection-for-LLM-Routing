@@ -1,0 +1,5 @@
+# Mistral compare results
+mistral_gsm8k_compare_results_*.csv
+mistral_gsm8k_compare_results_*.jsonl
+mistral_gsm8k_compare_results_full_*.csv
+mistral_gsm8k_compare_results_full_*.jsonl
