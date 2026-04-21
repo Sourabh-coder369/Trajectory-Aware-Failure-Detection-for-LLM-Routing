@@ -6,28 +6,20 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 def extract_answer(text):
-    """Extract the final numeric answer from text.
-    For ground_truth: looks for #### pattern first (GSM8K format).
-    For generated_text: extracts the last number found.
-    """
     if text is None:
         return None
     
-    # Try GSM8K ground truth format: #### <number>
     match = re.search(r'####\s*([-+]?\d[\d,]*\.?\d*)', text)
     if match:
         return float(match.group(1).replace(",", ""))
     
-    # Fallback: find the last number in the text
+
     numbers = re.findall(r'[-+]?\d[\d,]*\.?\d*', text.replace(",", ""))
     if not numbers:
         return None
     return float(numbers[-1].replace(",", ""))
 
 def compute_correctness(entry):
-    """Determine if the model's answer is correct by comparing
-    the extracted numeric answer from generated_text vs ground_truth."""
-    
     # If the entry already has is_correct (old format), use it
     if 'is_correct' in entry:
         return entry['is_correct']

@@ -1,10 +1,21 @@
-# Data files
-data/
+# Ignore everything
+*
 
-# Mistral experiment results
-experiments/mistral_gsm8k_compare_results_*.csv
-experiments/mistral_gsm8k_compare_results_*.jsonl
+# Keep .gitignore and README
+!.gitignore
+!README.md
+!README.pdf
 
-# Python cache
-__pycache__/
-*.pyc
+# Keep the 4 train_router files
+!train_router.py
+!train_router_rf.py
+!train_router_xgb.py
+!train_router_mlp.py
+
+# Keep their result files
+!results/
+results/*
+!results/router_results.json
+!results/router_rf_results.json
+!results/router_xgb_results.json
+!results/router_mlp_results.json
